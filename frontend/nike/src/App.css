@@ -12,13 +12,11 @@ body {
 }
 
 .black-nav {
-  background: black;
-  width: 100;
+  background-color: black;
+  width: 100%;
   display: flex;
   color: white;
-  padding: 20px;
-  font-weight: 600;
-  font-size: 20px;
+  height: 2px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

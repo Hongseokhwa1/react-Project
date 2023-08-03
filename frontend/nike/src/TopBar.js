@@ -1,11 +1,14 @@
+import ReactDOM from 'react-dom/client';
 import React, { useState } from 'react';
 import './TopBar.css';
 
-const claim = document.getElementById("claim");
-
 function TopBar() {
 
-    let isClaim = useState()
+    let [isClaim, setOpen] = useState(false);
+
+    let claimMenu = () => {
+        setOpen(!isClaim);
+    }
 
     return ( 
         <div className='TopBar'>
@@ -22,7 +25,7 @@ function TopBar() {
                 }><img className='logo' src='/logo/converse.PNG'/></a>
             </div>
             <div className='allUserMenu'>
-                <ul>
+                <ul >
                     <li className='userMenu'>
                         <a>
                             <span>로그인</span>
@@ -36,13 +39,51 @@ function TopBar() {
                     </li>
                     <li className='userMenu'>
                         <a onClick={
-                            (claim)=>{
-                                <DropMenu />
-                            }
-                        } id='claim'>
+                                claimMenu
+                        } className='claim'>
                             <span>고객센터</span>
                         </a>
                         <span> | </span>
+                        <div className={`noneMenu ${isClaim && "dropMenu"}`}>
+                            <ul className='dropMenu2'>
+                                <li className='dropMenu3'>
+                                    <a onClick={
+                                        ()=> {
+                                            alert("주문");
+                                        }
+                                    }>
+                                        <span>주문</span>
+                                    </a>
+                                </li>
+                                <li className='dropMenu3'>   
+                                    <a onClick={
+                                        ()=> {
+                                            alert("결제방법");
+                                        }
+                                    }>
+                                        <span>결제방법</span>
+                                    </a>
+                                </li>
+                                <li className='dropMenu3'>
+                                    <a onClick={
+                                        ()=> {
+                                            alert("배송");
+                                        }
+                                    }>
+                                        <span>배송</span>
+                                    </a>
+                                </li>
+                                <li className='dropMenu3'>
+                                    <a onClick={
+                                        ()=> {
+                                            alert("반품");
+                                        }
+                                    }>
+                                        <span>반품</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li className='userMenu'>
                         <a>

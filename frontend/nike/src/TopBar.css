@@ -16,6 +16,7 @@
 
 .allUserMenu {
     display: inline-block;
+    font-family: 'SDSamliphopangche_Outline';
     width: 100%;
 }
 
@@ -25,12 +26,28 @@
     align-content: center;
 }
 
-ul {
-    font-family: 'SDSamliphopangche_Outline';
+li {
+    list-style-type: none;
 }
 
-li {
-    display: inline-block; 
+.noneMenu {
+    display: none; 
+}
+
+.dropMenu {
+    display: block;
+    justify-content: left;
+    position: absolute;
+    top: 30px;
+    padding: 10px 0 30px;
+}
+
+.dropMenu2 {
+    margin: 2px;
+}
+
+.dropMenu3 {
+    margin: 3px;
 }
 
 span {
