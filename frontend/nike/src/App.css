@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  border: 1px solid white;
 }
 
 .App-logo {
@@ -40,6 +40,30 @@ body {
   color: #61dafb;
 }
 
+.orderBy {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 5px 20px;
+  height: 45px
+}
+
+.noneOrderByMenu {
+  display: none; 
+}
+
+.dropOrderByMenu {
+  display: block;
+  position: absolute;
+  width: 150px;
+  justify-content: left;
+  margin: 5px 0px 0px 30px;
+}
+
+.appEtc {
+  width: 100%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -47,4 +71,8 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.shoesList {
+  border: 1px solid red;
 }

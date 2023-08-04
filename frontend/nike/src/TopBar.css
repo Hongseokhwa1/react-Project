@@ -18,6 +18,7 @@
     display: inline-block;
     font-family: 'SDSamliphopangche_Outline';
     width: 100%;
+    padding: 15px;
 }
 
 .userMenu {
@@ -31,15 +32,14 @@ li {
 }
 
 .noneMenu {
-    display: none; 
+    display: none;
 }
 
 .dropMenu {
     display: block;
     justify-content: left;
     position: absolute;
-    top: 30px;
-    padding: 10px 0 30px;
+    margin: 0px 50px 0px 0px;
 }
 
 .dropMenu2 {
