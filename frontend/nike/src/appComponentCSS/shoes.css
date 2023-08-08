@@ -1,5 +1,16 @@
+.shoesInfo {
+    border: 1px solid blue;
+    width: 30%;
+}
+
 .image-wrapper {
     width: 300px;
     height: 300px;
     overflow: hidden;
+    border: 1px solid chartreuse;
+}
+
+.shoesEtc {
+    width: 300px;
+    border: 1px solid coral;
 }

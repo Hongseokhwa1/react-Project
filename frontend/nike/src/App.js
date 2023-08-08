@@ -1,9 +1,8 @@
-import React, { useState }  from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect}  from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import {Container} from 'react-bootstrap';
-import { MDBRipple } from 'mdb-react-ui-kit';
-import Shoes from './appComponent/shoes';
+import Shoes from './appComponent/Shoes';
+import ShoesDetail from './appComponent/shoesDetail';
+import sideBar from './Sidebar';
 import './App.css';
 
 
@@ -71,12 +70,21 @@ function App() {
           </button>
         </div>
       </div>
-      <Shoes />
-      <BrowserRouter>
-          <Routes>
-              <Route path='./appComponent/shoesDetail' element={<Shoes />}/>
-          </Routes>
-      </BrowserRouter>
+      <div>
+      <div className='content'>
+        <div className='sideBar'>
+            사이드바입니다.
+        </div>
+        <div className='shoesList'>
+          <BrowserRouter>
+              <Routes>
+                  <Route path='/shoesList'  element={<Shoes />}/>
+                  <Route path='/shoesDetail'  element={<ShoesDetail />}/>
+              </Routes>
+          </BrowserRouter>
+        </div>
+      </div>
+      </div>
     </div>
   );
 } 

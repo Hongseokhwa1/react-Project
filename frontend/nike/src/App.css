@@ -73,6 +73,17 @@ body {
   }
 }
 
+.content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sideBar {
+  width: 200px;
+  word-break:break-all;
+}
+
 .shoesList {
-  border: 1px solid red;
+  display: flex;
+  width: 100%;
 }
