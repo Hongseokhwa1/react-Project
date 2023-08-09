@@ -1,7 +1,7 @@
 import React, { useState, useEffect}  from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Shoes from './appComponent/Shoes';
-import ShoesDetail from './appComponent/shoesDetail';
+import ShoesList from './appComponent/ShoesList';
+import ShoesDetail from './appComponent/ShoesDetail';
 import sideBar from './Sidebar';
 import './App.css';
 
@@ -78,7 +78,7 @@ function App() {
         <div className='shoesList'>
           <BrowserRouter>
               <Routes>
-                  <Route path='/shoesList'  element={<Shoes />}/>
+                  <Route path='/index'  element={<ShoesList />}/>
                   <Route path='/shoesDetail'  element={<ShoesDetail />}/>
               </Routes>
           </BrowserRouter>

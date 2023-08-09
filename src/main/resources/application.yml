@@ -20,12 +20,12 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL57Dialect
     hibernate:
-      ddl-auto: create  # option type: create, create-drop, update, validate, none
+      ddl-auto: update  # option type: create, create-drop, update, validate, none
     properties:
       hibernate:
-        show_sql: true  # sql 쿼리를 보여줍니다.
+        show_sql: true  # sql 쿼리 보여주는 부분
         format_sql: true  # sql query formatting
-        use_sql_comments: true  # sql 쿼리의 추가정보를 보여줍니다.
+        use_sql_comments: true  # sql 쿼리의 추가정보
 
 logging:
   level:
@@ -33,4 +33,4 @@ logging:
       hibernate:
         type:
           descriptor:
-            sql: trace  # query의 ?에 어떤 값이 들어가는지 추적할 수 있는 설정입니다. TRACE Log에 값을 보여줍니다.
+            sql: trace  # query의 ?에 어떤 값이 들어가는지 추적할 수 있는 설정

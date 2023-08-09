@@ -3,7 +3,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Route } from 'react-router-dom';
 
-function shoesDetail() {
+function ShoesDetail() {
 
     return (
         <div className='shoesDetail'>
@@ -13,4 +13,4 @@ function shoesDetail() {
 }
 
 
-export default shoesDetail;
+export default ShoesDetail;

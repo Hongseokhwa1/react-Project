@@ -20,7 +20,7 @@ public class shoesInfo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int shsId;
 
-    @Column(name = "shs_cartegory")
+    @Column(name = "shs_category")
     private String shsCategory;
 
     @Column(name = "shs_name")
@@ -29,7 +29,7 @@ public class shoesInfo {
     @Column(name = "shs_size")
     private String shsSize;
 
-    @Column(name = "shs_amout")
+    @Column(name = "shs_amt")
     private int shsAmt;
 
     @Column(name = "shs_color")
