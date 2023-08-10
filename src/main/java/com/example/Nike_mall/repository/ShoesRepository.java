@@ -10,4 +10,5 @@ import com.example.Nike_mall.domain.shoesInfo;
 @Repository
 public interface ShoesRepository extends JpaRepository<shoesInfo, Integer> {
     List<shoesInfo> findAll();
+    shoesInfo findById(int id);
 }

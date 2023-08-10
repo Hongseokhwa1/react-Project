@@ -1,6 +1,5 @@
 package com.example.Nike_mall.controller;
 
-import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,5 +20,10 @@ public class mainController {
     public List<shoesInfo> shoesList() {
         System.out.println("shoesList 입니다.");
         return shoesRepository.findAll();
+    }
+
+    @RequestMapping(value = "/shoesDetail", method = RequestMethod.GET)
+    public shoesInfo shoesDetail(int id) {
+        return shoesRepository.findById(id);
     }
 }

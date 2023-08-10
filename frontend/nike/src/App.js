@@ -2,7 +2,7 @@ import React, { useState, useEffect}  from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import ShoesList from './appComponent/ShoesList';
 import ShoesDetail from './appComponent/ShoesDetail';
-import sideBar from './Sidebar';
+import SideBar from './Sidebar';
 import './App.css';
 
 
@@ -79,7 +79,7 @@ function App() {
           <BrowserRouter>
               <Routes>
                   <Route path='/index'  element={<ShoesList />}/>
-                  <Route path='/shoesDetail'  element={<ShoesDetail />}/>
+                  <Route path='/shoesDetail/:id'  element={<ShoesDetail />}/>
               </Routes>
           </BrowserRouter>
         </div>
