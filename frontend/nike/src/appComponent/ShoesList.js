@@ -43,10 +43,4 @@ function ShoesList() {
     );
 }
 
-function dd() {
-    return (<>
-    
-    </>);
-}
-
 export default ShoesList;
